@@ -5,7 +5,7 @@ class GetRequestErrorHandling extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            totalReactPackages: null
+            totalReactPackages: null, errorMessage: null
         };
     }
     componentDidMount() {
