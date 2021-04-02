@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class GetRequestErrorHandling extends React.Component {
+class GetRequestErrorHandling extends Component {
     constructor(props) {
         super(props);
         this.state = {
