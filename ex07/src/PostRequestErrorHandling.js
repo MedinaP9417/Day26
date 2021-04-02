@@ -11,11 +11,11 @@ class PostRequestErrorHandling extends Component {
     componentDidMount() {
         const article = { title: 'React POST Request Example' };
         axios.post('https://reqres.in/invalid-url', article)
-        .then((response) => this.setState({ articleId: response.data.id }))
-        .catch((error) => {
-            this.setState({ errorMessage: error.message });
-            console.error('There was an error!', error);
-        });
+            .then((response) => this.setState({ articleId: response.data.id }))
+            .catch((error) => {
+                this.setState({ errorMessage: error.message });
+                console.error('There was an error!', error);
+            });
 
     }
 
@@ -26,7 +26,7 @@ class PostRequestErrorHandling extends Component {
                 <h5 className="card-header">POST Request with Error Handling</h5>
                 <div className="card-body">
                     Error message: {errorMessage}
-                    </div>
+                </div>
             </div>
 
         );
