@@ -13,7 +13,7 @@ class GetRequestSetHeaders extends Component {
             'Content-Type': 'application/json'
         };
         axios.get('https://api.npms.io/v2/search?q=react', { headers })
-            .then((response) => this.setState({ totalReactPackages: response.data.total }));
+            .then(response => this.setState({ totalReactPackages: response.data.total }));
             
     }
     render() {
