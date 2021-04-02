@@ -13,6 +13,7 @@ class GetRequestErrorHandling extends Component {
         .then((response) => this.setState({ totalReactPackages: response.data.total }))
         .catch((error) => {
             this.setState({ errorMessage: error.message });
+            console.error('There was an error!', error);
         });
         
     }
@@ -22,7 +23,8 @@ class GetRequestErrorHandling extends Component {
             <div className="card text-center m-3">
                 <h5 className="card-header">GET Request with Error Handling</h5>
                 <div className="card-body">
-                    Error message: {errorMessage}</div>
+                    Error message: {errorMessage}
+                    </div>
             </div>
 
         );
